@@ -23,3 +23,7 @@ break
         end
     end
 end
+function Tp(p1,p2,p3,speed,double)
+t = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(speed, Enum.EasingStyle.Linear), {CFrame = CFrame.new(Vector3.new(p1,p2,p3)+Vector3.new(0,double,0))})
+t:Play()
+end
